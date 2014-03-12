@@ -1,0 +1,376 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <title>Catálogo online - Prefeitura da Paracambi</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/template.css" rel="stylesheet" media="screen">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.js"></script>
+      <script src="/js/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body>
+
+    <!-- Modal de Login-->
+    <div id="modalLogin" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Faça login para editar</h4>
+        </div>
+        <div class="modal-body">
+          <div class="col-md-6"><input class="col-md-12 form-control" type="text" placeholder="Login"></div>
+          <div class="col-md-6"><input class="col-md-12 form-control" type="text" placeholder="Senha"></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Enviar</button>
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Cancelar</button>
+        </div>
+      </div><!-- final do modal-content -->
+    </div><!-- final do modal-dialog -->
+    </div>
+    <!--fim do Modal de Login -->
+
+     <!-- Modal de Setor-->
+    <div id="modalSetor" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Detalhes do Setor</h4>
+        </div>
+        <div class="tabbable tabs-left">
+            <ul class="nav nav-tabs">
+              <li class="active"><a href="#tab1" data-toggle="tab">Detalhes do Setor</a></li>
+              <li><a href="#tab2" data-toggle="tab">Editar Setor</a></li>
+              
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade in active" id="tab1">
+
+                
+                <div class="modal-body">
+                  <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <div class="brand">
+                        <h3>Secretaria de Agricultura</h3>
+                        </div>
+                      </div>
+                       <table class="table">
+                         <thead>
+                            <tr>
+                              <th>Nome Curto</th>
+                              <th>Titular</th>
+                              <th>Secretária</th>
+                              <th>Telefone</th>
+                              <th>E-mail</th>
+                              
+                              <th>Skype</th>
+                             
+                              
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Agricultura</td>
+                              <td>José Ninguém das Couves</td>
+                              <td>Maria Couve-flor</td>
+                              <td>(22) 3333-2222</td>
+                              <td>agricultura@prefeituraparacambi.gov.rj.br</td>
+                              
+                              <td>meu-skype</td>
+                              
+                              
+                            </tr>
+                            <tr>
+                            <tr>
+                          </tbody>
+                       </table>
+                      
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="brand col-md-2">
+                    <img src="http://placehold.it/150x75" alt="Logo do Setor" class="img-responsive media-object img-rounded">
+                   </div>
+                   <div class="col-md-5">
+                    <h4>Endereço</h4>
+                     <p>
+                       R. Alguma alameda qualquer, 35<br>
+                       Num Bairro<br>
+                       CEP 00000-000
+                     </p>
+                   </div>
+                 </div>
+                
+              </div> 
+              <div class="tab-pane fade in" id="tab2">
+                <div class="row" style="margin: 20px 0 0 30px;">
+                  <div class="col-md-3"><input class="col-md-10 form-control" type="text" placeholder="Setor"></div>
+                  <div class="col-md-3"><input class="col-md-10 form-control" type="text" placeholder="Titular"></div>
+                  <div class="col-md-3"><input class="col-md-10 form-control" type="text" placeholder="Secretária"></div>
+                </div>
+                <div class="row" style="margin: 20px 0 0 30px;">
+                  <div class="col-md-3"><input class="col-md-10 form-control" type="text" placeholder="Nome Curto"></div>
+                  <div class="col-md-3"><input class="col-md-10 form-control" type="text" placeholder="E-mail"></div>
+                  <div class="col-md-3"><input class="col-md-10 form-control" type="text" placeholder="Skype"></div>
+                </div>
+                <div class="row" style="margin: 20px 0 0 20px;">
+                  <div class="col-md-4">
+                    <span class="btn btn-file">Selecione uma imagem
+                      <input type="file" class="form-control" placeholder="Selecione uma imagem">
+                    </span>
+                  </div>
+                  <div class="col-md-5"><textarea class="form-control" rows="3">Endereço</textarea></div>
+          </div>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Editar</button>
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Cancelar</button>
+                </div>
+              </div>
+              </div>
+      </div><!-- final do modal-content -->
+    </div><!-- final do modal-dialog -->
+    </div>
+    <!--fim do Modal de Setor -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2" id="logo">
+          <a href="index.html" title="Catálogo online">
+            <img src="http://placehold.it/200x96" alt="Catálogo online" class="img-responsive media-object img-rounded">
+          </a>
+        </div>
+        <div class="col-md-6">
+          <h1>Prefeitura de Paracambi</h1>
+        </div>
+        <div class="col-md-4 text-right" id="modal-login" style="margin-top: 20px;">
+          <a href="#modalLogin" role="button" class="btn btn-info" data-toggle="modal">Login</a>
+      </div>
+    </div>
+
+      <div class="row" style="margin-top: 20px;">
+        <div class="col-md-12">
+          <div class="navbar navbar-default" role="navigation">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Navegação</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Início</a></li>
+                <li><a href="#">Todos os endereços</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu DropDown <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Opção 1</a></li>
+                    <li><a href="#">Opção 2</a></li>
+                    <li><a href="#">Opção 3</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="navbar-form pull-right hidden-xs" role="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Digite o nome do setor...">
+                </div>
+                <button type="submit" class="btn btn-default">Buscar</button>
+              </form>
+            </div><!--final navbar-collapse -->
+          </div><!--final da navbar-->
+        </div><!--final da coluna-->
+      </div><!--final da linha-->
+      <div class="row">
+        <div class="col-md-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">Setores e Endereços</div>
+             <table class="table">
+               <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Setor</th>
+                    <th>Titular</th>
+                    <th>Telefone</th>
+                    <th>E-mail</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td><a href="#modalSetor" rel="tooltip" data-original-title="Clique para ver detalhes" class="btn" role="button" data-toggle="modal">Secretaria de Agricultura</a></td>
+                    <td>José Ninguém das Couves</td>
+                    <td>(22) 3333-2222</td>
+                    <td>agricultura@prefeituraparacambi.gov.rj.br</td>
+                  </tr>
+                   <tr>
+                    <td>1</td>
+                    <td><a href="#modalSetor" rel="tooltip" data-original-title="Clique para ver detalhes" class="btn" role="button" data-toggle="modal">Secretaria de Agricultura</a></td>
+                    <td>José Ninguém das Couves</td>
+                    <td>(22) 3333-2222</td>
+                    <td>agricultura@prefeituraparacambi.gov.rj.br</td>
+                  </tr>
+                   <tr>
+                    <td>1</td>
+                    <td><a href="#modalSetor" class="btn" role="button" data-toggle="modal">Secretaria de Agricultura</a></td>
+                    <td>José Ninguém das Couves</td>
+                    <td>(22) 3333-2222</td>
+                    <td>agricultura@prefeituraparacambi.gov.rj.br</td>
+                  </tr>
+                   <tr>
+                    <td>1</td>
+                    <td><a href="#modalSetor" class="btn" role="button" data-toggle="modal">Secretaria de Agricultura</a></td>
+                    <td>José Ninguém das Couves</td>
+                    <td>(22) 3333-2222</td>
+                    <td>agricultura@prefeituraparacambi.gov.rj.br</td>
+                  </tr>
+                   <tr>
+                    <td>1</td>
+                    <td><a href="#modalSetor" class="btn" role="button" data-toggle="modal">Secretaria de Agricultura</a></td>
+                    <td>José Ninguém das Couves</td>
+                    <td>(22) 3333-2222</td>
+                    <td>agricultura@prefeituraparacambi.gov.rj.br</td>
+                  </tr>
+                   <tr>
+                    <td>1</td>
+                    <td><a href="#modalSetor" class="btn" role="button" data-toggle="modal">Secretaria de Agricultura</a></td>
+                    <td>José Ninguém das Couves</td>
+                    <td>(22) 3333-2222</td>
+                    <td>agricultura@prefeituraparacambi.gov.rj.br</td>
+                  </tr>
+                   <tr>
+                    <td>1</td>
+                    <td><a href="#modalSetor" class="btn" role="button" data-toggle="modal">Secretaria de Agricultura</a></td>
+                    <td>José Ninguém das Couves</td>
+                    <td>(22) 3333-2222</td>
+                    <td>agricultura@prefeituraparacambi.gov.rj.br</td>
+                  </tr>
+                   <tr>
+                    <td>1</td>
+                    <td><a href="#modalSetor" class="btn" role="button" data-toggle="modal">Secretaria de Agricultura</a></td>
+                    <td>José Ninguém das Couves</td>
+                    <td>(22) 3333-2222</td>
+                    <td>agricultura@prefeituraparacambi.gov.rj.br</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td><a href="#modalSetor" class="btn" role="button" data-toggle="modal">Secretaria de Agricultura</a></td>
+                    <td>José Ninguém das Couves</td>
+                    <td>(22) 3333-2222</td>
+                    <td>agricultura@prefeituraparacambi.gov.rj.br</td>
+                  </tr>
+                   <tr>
+                    <td>1</td>
+                    <td><a href="#modalSetor" class="btn" role="button" data-toggle="modal">Secretaria de Agricultura</a></td>
+                    <td>José Ninguém das Couves</td>
+                    <td>(22) 3333-2222</td>
+                    <td>agricultura@prefeituraparacambi.gov.rj.br</td>
+                  </tr>
+                   <tr>
+                    <td>1</td>
+                    <td><a href="#modalSetor" class="btn" role="button" data-toggle="modal">Secretaria de Agricultura</a></td>
+                    <td>José Ninguém das Couves</td>
+                    <td>(22) 3333-2222</td>
+                    <td>agricultura@prefeituraparacambi.gov.rj.br</td>
+                  </tr>
+                   <tr>
+                    <td>1</td>
+                    <td><a href="#modalSetor" class="btn" role="button" data-toggle="modal">Secretaria de Agricultura</a></td>
+                    <td>José Ninguém das Couves</td>
+                    <td>(22) 3333-2222</td>
+                    <td>agricultura@prefeituraparacambi.gov.rj.br</td>
+                  </tr>
+                   <tr>
+                    <td>1</td>
+                    <td><a href="#modalSetor" class="btn" role="button" data-toggle="modal">Secretaria de Agricultura</a></td>
+                    <td>José Ninguém das Couves</td>
+                    <td>(22) 3333-2222</td>
+                    <td>agricultura@prefeituraparacambi.gov.rj.br</td>
+                  </tr>
+                   <tr>
+                    <td>1</td>
+                    <td><a href="#modalSetor" class="btn" role="button" data-toggle="modal">Secretaria de Agricultura</a></td>
+                    <td>José Ninguém das Couves</td>
+                    <td>(22) 3333-2222</td>
+                    <td>agricultura@prefeituraparacambi.gov.rj.br</td>
+                  </tr>
+                   <tr>
+                    <td>1</td>
+                    <td><a href="#modalSetor" class="btn" role="button" data-toggle="modal">Secretaria de Agricultura</a></td>
+                    <td>José Ninguém das Couves</td>
+                    <td>(22) 3333-2222</td>
+                    <td>agricultura@prefeituraparacambi.gov.rj.br</td>
+                  </tr>
+                   <tr>
+                    <td>1</td>
+                    <td><a href="#modalSetor" class="btn" role="button" data-toggle="modal">Secretaria de Agricultura</a></td>
+                    <td>José Ninguém das Couves</td>
+                    <td>(22) 3333-2222</td>
+                    <td>agricultura@prefeituraparacambi.gov.rj.br</td>
+                  </tr>
+                  <tr>
+                  <tr>
+                </tbody>
+             </table>
+          </div>
+          </div>
+        </div><!--final tabela endereços-->
+
+      
+
+      
+
+      
+
+      <hr>
+
+      <footer>
+        <div class="navbar navbar-default navbar-fixed-bottom navbar-inverse">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Navegação</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <h4><a class="brand" href="#">Catálogo online - prefeitura de Paracambi</a></h4>
+            </div>
+        </div>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <!-- Arquivos Javascripts
+    ================================================== -->
+    <!-- jQuery direto do local -->
+    <script src="js/jquery-1.10.2.min.js"></script>
+    
+    <!-- jQuery direto do CDN (somente online) -->
+    <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
+    
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+      $(function () {
+          $("[rel='tooltip']").tooltip();
+      });
+      $(function () {
+        $("[rel='popouver']").popover();
+      });
+      $('.carousel').carousel()
+    </script>
+  </body>
+</html>
