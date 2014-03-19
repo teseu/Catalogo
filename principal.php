@@ -17,13 +17,18 @@
 
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target=".navbar-ex1-collapse">
   <?php require_once("modal-login.php"); ?>
   
   <div class="container">
   	<?php require_once("cabecalho.php"); ?>
   	<?php require_once("menu.php"); ?>
-  	<?php require_once("enderecos.php"); ?>
+    <?php
+   if(!isset($_GET['page']))
+  require_once("enderecos.php");
+  else
+  require_once($_GET['page'].".php");
+  ?>
 
   	<?php require_once("rodape.php"); ?>	
   	<?php require_once("modal-setor.php"); ?>

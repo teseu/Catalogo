@@ -12,13 +12,13 @@
             <div class="collapse navbar-collapse navbar-ex1-collapse">
               <ul class="nav navbar-nav">
                 <li><a href="index.html">Início</a></li>
-                <li class="active"><a href="#">Todos os endereços</a></li>
+                <li><a href="principal.php">Todos os endereços</a></li>
                 <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu DropDown <b class="caret"></b></a>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Opções de Usuários <b class="caret"></b></a>
                   <ul class="dropdown-menu">
-                    <li><a href="#">Opção 1</a></li>
-                    <li><a href="#">Opção 2</a></li>
-                    <li><a href="#">Opção 3</a></li>
+                    <li><a href="principal.php?page=usuario-lista">Listar todos</a></li>
+                    <li><a href="principal.php?page=usuario-lista-inc">Incluir</a></li>
+                    <li><a href="principal.php?page=usuario-pesquisa">Editar</a></li>
                   </ul>
                 </li>
               </ul>

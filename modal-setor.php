@@ -97,12 +97,12 @@
                     </span>
                   </div>
                   <div class="col-md-5"><textarea class="form-control" rows="3">Endereço</textarea></div>
-          </div>
+              </div>
               </div>
               <div class="modal-footer">
                   <button type="button" class="btn btn-default" data-dismiss="modal">Editar</button>
                   <button type="button" class="btn btn-primary" data-dismiss="modal">Cancelar</button>
-                </div>
+              </div>
               </div>
               </div>
       </div><!-- final do modal-content -->
