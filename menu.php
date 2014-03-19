@@ -11,8 +11,8 @@
             </div>
             <div class="collapse navbar-collapse navbar-ex1-collapse">
               <ul class="nav navbar-nav">
-                <li><a href="index.html">Início</a></li>
-                <li><a href="principal.php">Todos os endereços</a></li>
+                <li><a href="principal.php">Início</a></li>
+                <li><a href="principal.php?page=enderecos">Todos os endereços</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Opções de Usuários <b class="caret"></b></a>
                   <ul class="dropdown-menu">

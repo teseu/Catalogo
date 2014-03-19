@@ -25,7 +25,7 @@
   	<?php require_once("menu.php"); ?>
     <?php
    if(!isset($_GET['page']))
-  require_once("enderecos.php");
+  require_once("inicio.php");
   else
   require_once($_GET['page'].".php");
   ?>
