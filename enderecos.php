@@ -37,10 +37,10 @@ $email_c = $list[4];
 
 echo "<tr>
 <td>$num_c</td>
-<td><buttom rel='tooltip' data-original-title='Clique para ver detalhes' 
-class='open-modalSetor btn btn-default' role='button' id='$id_c' data-toggle='modal' data-target='#modalSetor'>
+<td><a href='#modalSetor' rel='tooltip' data-original-title='Clique para ver detalhes' 
+class='btn' role='button' id='$id_c' data-toggle='modal' data-target='#modalSetor'>
 $setor_c
-</buttom></td>
+</a></td>
 <td>$titular_c</td>
 <td>$telefone_c</td>
 <td>$email_c</td>

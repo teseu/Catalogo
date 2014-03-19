@@ -22,9 +22,10 @@
                   </ul>
                 </li>
               </ul>
-              <form class="navbar-form pull-right hidden-xs" role="search">
+              <form class="navbar-form pull-right hidden-xs" role="search" action="principal.php?page=enderecos"
+               method="post" enctype="multipart/form-data">
                 <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Digite o nome do setor...">
+                  <input type="text" class="form-control" placeholder="Digite o nome do setor..." name="busca">
                 </div>
                 <button type="submit" class="btn btn-default">Buscar</button>
               </form>
