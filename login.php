@@ -19,11 +19,11 @@ $conta = mysqli_num_rows($logar);
 
 if($conta == 1 ) {
 $_SESSION['login'] = $login;
-header('location: principal.php?page=enderecos');
+header('location: principal.php?page=alert-login');
 }
 else {
 	unset ($_SESSION['login']);
-	header('location: principal.php?page=usuario-lista');
+	header('location: principal.php?page=alert-erro-login');
 	echo "não logado";
 }
 }

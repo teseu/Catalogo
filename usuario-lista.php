@@ -6,7 +6,7 @@
    or die ("Couldn't connect to server3");
 
  ?>
-
+<?php if($_SESSION['logado']): ?>
 <div class="row">
  <div class="col-md-12">
    <div class="panel panel-default">
@@ -55,3 +55,9 @@ $nome_c
     </div>
   </div>
 </div>
+<?php else: ?>
+  <div class="alert alert-warning alert-dismissable">
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    <strong>Atenção!</strong> Página de acesso restrito. Efetue login ou procure o administrador do sistema.
+  </div>
+<?php endif; ?>
