@@ -1,4 +1,4 @@
-
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="pt">
   <head>
@@ -18,6 +18,21 @@
   </head>
 
   <body data-spy="scroll" data-target=".navbar-ex1-collapse">
+  <?php 
+/*$login = $_REQUEST['login_p'];
+$senha = $_REQUEST['senha_p'];
+
+if(isset($login)) {
+*/
+if ($_SESSION['login']) {
+  $_SESSION['logado'] = true;
+  echo "logado p";
+}
+else {
+  echo "não logado p";
+}
+
+ ?>
   <?php require_once("modal-login.php"); ?>
   
   <div class="container">
