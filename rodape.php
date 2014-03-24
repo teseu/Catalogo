@@ -7,7 +7,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-         <h4><a class="brand" href="#">Catálogo online - prefeitura de Paracambi</a></h4>
+         <h4><a class="brand" href="#">Catálogo online - Prefeitura de Paracambi</a></h4>
       </div>
   </div>
 </footer>

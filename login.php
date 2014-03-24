@@ -8,7 +8,7 @@ mysql_set_charset('utf8',$con);
 mysqli_query( $con, 'SET NAMES "utf8" COLLATE "utf8_general_ci"' );
 
 $login = (isset($_POST['login_p'])) ? $_POST['login_p'] : '';
-$senha = (isset($_POST['senha_p'])) ? $_POST['senha_p'] : '';
+$senha = (isset($_POST['senha_p'])) ? md5($_POST['senha_p']) : '';
 
 
 if (isset($_POST['login_p'])) { 

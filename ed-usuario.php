@@ -10,7 +10,7 @@ mysqli_query( $con, 'SET NAMES "utf8" COLLATE "utf8_general_ci"' );
 $id_i = $_POST['id_i'];
 $nome_i = $_POST['nome_i'];
 $login_i = $_POST['login_i'];
-$senha_i = $_POST['senha_i'];
+$senha_i = md5($_POST['senha_i']);
 $enviar_i = $_POST['enviar'];
 
 if(isset($id_i)) {
