@@ -72,7 +72,7 @@ INSERT INTO `Setor` (`Setor_Id`, `Setor_Nome`, `Setor_Titular`, `Setor_Telefone`
 -- Table structure for table `Usuarios`
 --
 
-CREATE TABLE IF NOT EXISTS `Usuarios` (
+CREATE TABLE IF NOT EXISTS `Usuario` (
   `Usuario_Id` int(11) NOT NULL,
   `Usuario_Login` varchar(20) NOT NULL,
   `Usuario_Nome` varchar(150) NOT NULL,
@@ -85,5 +85,5 @@ CREATE TABLE IF NOT EXISTS `Usuarios` (
 -- Dumping data for table `Usuarios`
 --
 
-INSERT INTO `Usuarios` (`Usuario_Id`, `Usuario_Login`, `Usuario_Nome`, `Usuario_Senha`) VALUES
-(1000, 'jose.ninguem', 'José Ninguém', 'senha');
+INSERT INTO `Usuario` (`Usuario_Id`, `Usuario_Login`, `Usuario_Nome`, `Usuario_Senha`) VALUES
+(1000, 'jose.ninguem', 'José Ninguém', 'e8d95a51f3af4a3b134bf6bb680a213a');
