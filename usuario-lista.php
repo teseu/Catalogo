@@ -3,7 +3,7 @@
   include("misc.inc");
   include("usuario.php");
   $con = mysqli_connect($host,$user,$passwd,$dbname)
-   or die ("Couldn't connect to server3");
+   or die ("Não foi possível conectar ao banco de dados em lista de usuario!");
 
  ?>
 <?php if($_SESSION['logado']): ?>
@@ -37,7 +37,7 @@ $senha_c = $list[3];
 echo "<tr>
 <td>$num_c</td>
 <td>$id_c</td>
-<td><a href='principal.php?page=usuario-lista-ed&id_p=$id_c' rel='tooltip' data-original-title='Clique para editar' 
+<td><a href='index.php?page=usuario-lista-ed&id_p=$id_c' rel='tooltip' data-original-title='Clique para editar' 
 class='btn' id='$id_c'>
 $nome_c
 </a></td>
