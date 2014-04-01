@@ -18,7 +18,7 @@
              <th>Id</th>
              <th>Nome</th>
              <th>Login</th>
-             <th>Senha</th>
+             <th>Acesso</th>
            </tr>
          </thead>
          <tbody>
@@ -42,7 +42,7 @@ class='btn' id='$id_c'>
 $nome_c
 </a></td>
 <td>$login_c</td>
-<td>$senha_c</td>
+<td>Não definido</td>
 </tr>";
 
 }

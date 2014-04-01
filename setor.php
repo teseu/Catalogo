@@ -2,24 +2,31 @@
 
 include("misc.inc");
 
+
 $con = mysqli_connect($host,$user,$passwd,$dbname)
    or die ("Couldn't connect to server em Setor");
 mysqli_query( $con, 'SET NAMES "utf8" COLLATE "utf8_general_ci"' );
 
 $busca = $_REQUEST['busca'];
+$tipo_setor = $_GET['tipo'];
 
 if(isset($busca)) { 
 $setor_curto = "SELECT Setor_Id, Setor_Nome, Setor_Titular, Setor_Telefone, Setor_Email, Setor_Alias 
 FROM Setor
-WHERE Setor_Nome LIKE '%$busca%' AND Setor_Alias LIKE '%$busca%'
+WHERE Setor_Nome LIKE '%$busca%' OR Setor_Alias LIKE '%$busca%'
 ORDER BY Setor_Id ";
+}
+elseif (isset($tipo_setor)) {
+$setor_curto = "SELECT Setor_Id, Setor_Nome, Setor_Titular, Setor_Telefone, Setor_Email
+FROM Setor
+WHERE Setor_Tipo = $tipo_setor
+ORDER BY Setor_Id ";	
 }
 else { 
 $setor_curto = "SELECT Setor_Id, Setor_Nome, Setor_Titular, Setor_Telefone, Setor_Email
 FROM Setor
 ORDER BY Setor_Id ";
 }
-
 
 
 

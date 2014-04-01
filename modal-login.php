@@ -1,7 +1,7 @@
 <?php session_start(); ?>
 <?php include("login.php") ?>
  
-<form action="principal.php" method="post">
+<form action="index.php" method="post">
 <div id="modalLogin" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog">
       <div class="modal-content">
@@ -11,7 +11,7 @@
         </div>
         <div class="modal-body">
           <div class="col-md-6"><input class="col-md-12 form-control" type="text" placeholder="Login" name="login_p"></div>
-          <div class="col-md-6"><input class="col-md-12 form-control" type="text" placeholder="Senha" name="senha_p"></div>
+          <div class="col-md-6"><input class="col-md-12 form-control" type="password" placeholder="Senha" name="senha_p"></div>
         </div>
         <div class="modal-footer">
           <input type="submit" class="btn btn-default" value="Enviar">

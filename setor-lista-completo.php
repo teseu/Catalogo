@@ -6,6 +6,7 @@
    or die ("Couldn't connect to server em setor-lista");
 
  ?>
+ <?php if($_SESSION['logado']): ?>
 <div class="tabbable tabs-left">
             <ul class="nav nav-tabs">
               <li class="active"><a href="#tab1" data-toggle="tab">Detalhes do Setor</a></li>
@@ -55,7 +56,7 @@
                 </div>
                 <div class="row">
                   <div class="brand col-md-2">
-                    <img src="http://placehold.it/150x75" alt="Logo do Setor" class="img-responsive media-object img-rounded">
+                    <img src='<?php echo "$logosetor_m" ?>' alt="Logo do Setor" class="img-responsive media-object img-rounded">
                    </div>
                    <div class="col-md-5">
                     <h4>Endereço</h4>
@@ -104,7 +105,7 @@
                 <fieldset class="row" style="margin: -40px 0 0 30px;">
                 <legend>Imagem</legend>
                   <div class="form-group col-md-3">
-                      <img src="http://placehold.it/150x75" alt="Logo do Setor" class="img-responsive media-object img-rounded"> 
+                      <img src='<?php echo "$logosetor_m" ?>' alt="Logo do Setor" class="img-responsive media-object img-rounded"> 
                   </div>   
                    <div class="form-group col-md-3"> 
                       <label for="logosetor_m">Caminho</label>
@@ -127,3 +128,9 @@
         </div>
 </div>
 
+<?php else: ?>
+  <div class="alert alert-warning alert-dismissable">
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    <strong>Atenção!</strong> Página de acesso restrito. Efetue login ou procure o administrador do sistema.
+  </div>
+<?php endif; ?>

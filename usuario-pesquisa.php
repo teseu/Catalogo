@@ -9,7 +9,7 @@
 	</div>
 	<div class="modal-footer">
 	    <input type="submit" class="btn btn-primary" value="Pesquisar" />
-	    <a href="principal.php?page=usuario-lista">
+	    <a href="index.php?page=usuario-lista">
 	    	<button type="button" class="btn btn-default">Cancelar</button>
 	    </a>
 	</div>

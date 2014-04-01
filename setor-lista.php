@@ -37,10 +37,18 @@ $email_c = $list[4];
 
 echo "<tr>
 <td>$num_c</td>
-<td><a href='index.php?page=setor-lista-completo&id_p=$id_c' rel='tooltip' data-original-title='Clique para editar' 
+<td>";
+if($_SESSION['logado']): 
+echo "
+<a href='index.php?page=setor-lista-completo&id_p=$id_c' rel='tooltip' data-original-title='Clique para ver detalhes' 
 class='btn' id='$id_c'>
 $setor_c
-</a></td>
+</a> "; 
+else :
+echo " $setor_c";
+endif; 
+echo "
+</td>
 <td>$titular_c</td>
 <td>$telefone_c</td>
 <td>$email_c</td>
@@ -57,12 +65,4 @@ $setor_c
   </div>
 </div>
 
-<script type="text/javascript">
-$(document).on("click", ".open-modalSetor", function () {
-
-  var meuSetorId = $(this).data('id');
-  $(".modal-body #setorId").value(meuSetorId);
-
-});
-    </script>
 

@@ -22,11 +22,21 @@ VALUES ( '$id_i', '$nome_i', '$login_i', '$senha_i'
 $result = mysqli_query($con,$usuario_incluir)
        or die (mysqli_error());
        
-       echo "O usuário foi inserido com sucesso!<br><br>
-       Deseja <a href=\"principal.php?page=usuario-lista-inc\">inserir outro?</a>";
+       echo "
+<div class='alert alert-success alert-dismissable'>
+	<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
+  	O usuário foi inserido com sucesso! Deseja <a href='index.php?page=usuario-lista-inc' class='alert-link'>inserir outro?</a>
+</div>
+
+       ";
 }
 else {
-	echo "nada";
+	echo "
+<div class='alert alert-warning alert-dismissable'>
+	<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
+  	<strong>Atenção!</strong> Ocorreu um erro na inclusão do usuário.
+</div>
+";
 }
 
 ?>

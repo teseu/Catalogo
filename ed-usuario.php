@@ -21,11 +21,19 @@ WHERE `Usuario_Id`='$id_i'
 $result = mysqli_query($con,$usuario_atualizar)
        or die (mysqli_error());
        
-       echo "O usuário foi atualizado com sucesso!<br><br>
-       Veja a <a href=\"principal.php?page=usuario-lista\">lista</a>";
+       echo "<div class='alert alert-success alert-dismissable'>
+				<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
+  				O usuário foi atualizado com sucesso! Veja a <a href='index.php?page=usuario-lista' class='alert-link'>lista</a>
+</div>
+
+       ";
 }
 else {
-	echo "Id não setado";
+	echo "
+<div class='alert alert-warning alert-dismissable'>
+	<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
+  	<strong>Atenção!</strong> Ocorreu um erro na alteração do usuário.
+</div>";
 }
 
 ?>
