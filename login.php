@@ -14,10 +14,18 @@ if (isset($_POST['login_p'])) {
 
 $logar = mysqli_query($con,"SELECT * FROM Usuario WHERE Usuario_Login = '$login' AND Usuario_Senha = '$senha' ");
 
+while ($logado_u = mysqli_fetch_array($logar)) {
+$idusuario_l = $logado_u[0];
+$nomeusuario_l = $logado_u[1];
+$loginusuario_l = $logado_u[2];
+$senhausuario_l = $logado_u[3];
+}
+
 $conta = mysqli_num_rows($logar);
 
 if($conta == 1 ) {
 $_SESSION['login'] = $login;
+$_SESSION['usuario'] = $nomeusuario_l;
 header('location: index.php?page=alert-login');
 }
 else {

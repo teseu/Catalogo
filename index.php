@@ -39,7 +39,6 @@ if ($_SESSION['login']) {
   ?>
 
   	<?php require_once("rodape.php"); ?>	
-  	<?php require_once("modal-setor.php"); ?>
   </div>
 
   <!-- Arquivos Javascripts

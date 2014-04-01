@@ -37,17 +37,11 @@ $email_c = $list[4];
 
 echo "<tr>
 <td>$num_c</td>
-<td>";
-if($_SESSION['logado']): 
-echo "
+<td>
 <a href='index.php?page=setor-lista-completo&id_p=$id_c' rel='tooltip' data-original-title='Clique para ver detalhes' 
 class='btn' id='$id_c'>
 $setor_c
-</a> "; 
-else :
-echo " $setor_c";
-endif; 
-echo "
+</a> 
 </td>
 <td>$titular_c</td>
 <td>$telefone_c</td>

@@ -6,11 +6,11 @@
    or die ("Couldn't connect to server em setor-lista");
 
  ?>
- <?php if($_SESSION['logado']): ?>
+
 <div class="tabbable tabs-left">
             <ul class="nav nav-tabs">
               <li class="active"><a href="#tab1" data-toggle="tab">Detalhes do Setor</a></li>
-              <li><a href="#tab2" data-toggle="tab">Editar Setor</a></li>
+              <li <?php if(!$_SESSION['logado']) {echo 'class="disabled"';}  ?>><a href="#tab2" data-toggle="tab">Editar Setor</a></li>
               
             </ul>
             <div class="tab-content">
@@ -127,10 +127,3 @@
               
         </div>
 </div>
-
-<?php else: ?>
-  <div class="alert alert-warning alert-dismissable">
-    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-    <strong>Atenção!</strong> Página de acesso restrito. Efetue login ou procure o administrador do sistema.
-  </div>
-<?php endif; ?>
