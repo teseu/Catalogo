@@ -1,7 +1,7 @@
 <?php session_start(); ?>
 <?php include("login.php") ?>
  
-<form action="principal.php" method="post">
+<form action="index.php" method="post">
 <div id="modalLogin" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog">
       <div class="modal-content">

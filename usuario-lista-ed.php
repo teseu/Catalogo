@@ -1,7 +1,7 @@
 <?php include("misc.inc"); ?>
 <?php include("ed-usuario-p.php"); ?>
 
-<form method="post" action="principal.php?page=ed-usuario" enctype="multipart/form-data">
+<form method="post" action="index.php?page=ed-usuario" enctype="multipart/form-data">
 	<div class="tab-pane fade in" id="tab2">
 	  <div class="row" style="margin: 20px 0 0 30px;">
 	    <div class="col-md-2"><input class="col-md-12 form-control" type="text" name="id_i"
@@ -16,7 +16,7 @@
 	</div>
 	<div class="modal-footer">
 	    <input type="submit" class="btn btn-primary" value="Salvar" />
-	    <a href="principal.php?page=usuario-lista">
+	    <a href="index.php?page=usuario-lista">
 	    	<button type="button" class="btn btn-default">Cancelar</button>
 	    </a>
 	</div>
