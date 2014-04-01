@@ -4,7 +4,7 @@ include("misc.inc");
 
 $con = mysqli_connect($host,$user,$passwd,$dbname)
    or die ("Couldn't connect to serve inc-usuario");
-#mysql_set_charset('utf8',$con);
+mysql_set_charset('utf8',$con);
 mysqli_query( $con, 'SET NAMES "utf8" COLLATE "utf8_general_ci"' );
 
 
@@ -23,7 +23,7 @@ $result = mysqli_query($con,$usuario_incluir)
        or die (mysqli_error());
        
        echo "O usuário foi inserido com sucesso!<br><br>
-       Deseja <a href=\"index.php?page=usuario-lista-inc\">inserir outro?</a>";
+       Deseja <a href=\"principal.php?page=usuario-lista-inc\">inserir outro?</a>";
 }
 else {
 	echo "nada";

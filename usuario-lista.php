@@ -3,7 +3,7 @@
   include("misc.inc");
   include("usuario.php");
   $con = mysqli_connect($host,$user,$passwd,$dbname)
-   or die ("Couldn't connect to server3");
+   or die ("Não foi possível conectar ao banco de dados em lista de usuario!");
 
  ?>
 <?php if($_SESSION['logado']): ?>
