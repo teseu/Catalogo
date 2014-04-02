@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/jquery.min.css" rel="stylesheet" media="screen">
     <link href="css/template.css" rel="stylesheet" media="screen">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -44,8 +45,27 @@ if ($_SESSION['login']) {
   <!-- Arquivos Javascripts
     ================================================== -->
     <!-- jQuery direto do local -->
-    <script src="js/jquery-1.10.2.min.js"></script>
-    
+    <script src="js/jquery.min.js"></script>
+     <!-- jQuery form validator online -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.1.47/jquery.form-validator.min.js"></script>
+
+    <script>
+      $.validate({
+        modules : 'security',
+        onModulesLoaded : function() {
+          var optionalConfig = {
+            fontSize: '12pt',
+            padding: '4px',
+            bad : 'Very bad',
+            weak : 'Weak',
+            good : 'Good',
+            strong : 'Strong'
+          };
+
+          $('input[name="pass_confirmation"]').displayPasswordStrength(optionalConfig);
+        }
+      });
+    </script>
     <!-- jQuery direto do CDN (somente online) -->
     <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
     

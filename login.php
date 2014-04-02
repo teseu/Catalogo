@@ -30,6 +30,7 @@ header('location: index.php?page=alert-login');
 }
 else {
 	unset ($_SESSION['login']);
+	unset ($_SESSION['usuario']);
 	header('location: index.php?page=alert-erro-login');
 	echo "não logado";
 }
