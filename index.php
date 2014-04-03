@@ -56,10 +56,10 @@ if ($_SESSION['login']) {
           var optionalConfig = {
             fontSize: '12pt',
             padding: '4px',
-            bad : 'Very bad',
-            weak : 'Weak',
-            good : 'Good',
-            strong : 'Strong'
+            bad : 'Muito fraca',
+            weak : 'Fraca',
+            good : 'Boa',
+            strong : 'Forte'
           };
 
           $('input[name="pass_confirmation"]').displayPasswordStrength(optionalConfig);
