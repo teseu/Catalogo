@@ -42,11 +42,12 @@ ORDER BY Setor_Nome ";
 $setor_in = $_REQUEST['id_p'];
 
 if(isset($setor_in)) { 
-$setor_informado = "SELECT Setor_Id, Setor_Nome, Setor_Titular, Setor_Telefone, Setor_Email, 
-Setor_Skype, Setor_Endereco, Setor_Logo, Setor_Alias, Setor_Secretaria 
-FROM Setor
-WHERE Setor_Id = $setor_in
-ORDER BY Setor_Nome ";
+$setor_informado = "SELECT Setor_Id, Setor_Nome, Setor_Tipo, Tipo_Descricao, Setor_Titular, Setor_Telefone, 
+Setor_Email, Setor_Skype, Setor_Endereco, Setor_Logo, Setor_Alias, Setor_Secretaria 
+FROM Setor, Tipo 
+WHERE Setor.Setor_Tipo = Tipo.Tipo_Id AND Setor.Setor_Id = $setor_in
+ORDER BY Setor.Setor_Nome ";
+
 
 $lista_setor_informado = mysqli_query($con,$setor_informado)
        or die (mysqli_error());
@@ -54,14 +55,16 @@ $lista_setor_informado = mysqli_query($con,$setor_informado)
 while ($list = mysqli_fetch_array($lista_setor_informado)) {
 $idsetor_m = $list[0];
 $nomesetor_m = $list[1];
-$titularsetor_m = $list[2];
-$telefonesetor_m = $list[3];
-$emailsetor_m = $list[4];
-$skypesetor_m = $list[5];
-$enderecosetor_m = $list[6];
-$logosetor_m = $list[7];
-$aliassetor_m = $list[8];
-$secretariasetor_m = $list[9];
+$tiposetor_m = $list[2];
+$descricaotipo_m = $list[3];
+$titularsetor_m = $list[4];
+$telefonesetor_m = $list[5];
+$emailsetor_m = $list[6];
+$skypesetor_m = $list[7];
+$enderecosetor_m = $list[8];
+$logosetor_m = $list[9];
+$aliassetor_m = $list[10];
+$secretariasetor_m = $list[11];
 
 }
 }
