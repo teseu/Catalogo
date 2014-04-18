@@ -10,7 +10,13 @@
 <div class="row">
  <div class="col-md-12">
    <div class="panel panel-default">
-     <div class="panel-heading">Usuarios</div>
+     <div class="panel-heading">
+      <div class="col-md-10"> Usuarios
+      </div>
+       <div class="col-md-2 text-right" id="panel-btn">
+          <a href="index.php?page=usuario-lista-inc"><img src="img/edit_add.png"></a>
+      </div>
+    </div>
       <table class="table">
         <thead>
            <tr>

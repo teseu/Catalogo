@@ -38,10 +38,11 @@ include("tipo.php");
                 <?php if($_SESSION['logado']): ?>
                 <li <?php if($_GET['page'] == 'usuario-lista-inc' or $_GET['page'] == 'usuario-lista' )
                  {echo "class='active dropdown'";} else {echo "class='dropdown'";} ?>>
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Opções de Usuários <b class="caret"></b></a>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Opções Administrativas <b class="caret"></b></a>
                   <ul class="dropdown-menu">
-                    <li><a href="index.php?page=usuario-lista">Listar todos</a></li>
-                    <li><a href="index.php?page=usuario-lista-inc">Incluir</a></li>
+                    <li><a href="index.php?page=usuario-lista">Usuários</a></li>
+                    <li><a href="index.php?page=tipo-lista">Tipos</a></li>
+                    <li><a href="index.php?page=permissao-lista">Permissões</a></li>
                   </ul>
                 </li>
               <?php endif; ?>
