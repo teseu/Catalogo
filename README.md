@@ -1,4 +1,4 @@
 Catalogo
 ========
 
-Catálogo de contatos em PHP e MariaDB
+*Catálogo de contatos em PHP e MariaDB*
