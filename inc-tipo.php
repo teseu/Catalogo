@@ -7,24 +7,23 @@ $con = mysqli_connect($host,$user,$passwd,$dbname)
 mysqli_query( $con, 'SET NAMES "utf8" COLLATE "utf8_general_ci"' );
 
 
-$id_i = $_POST['id_i'];
-$nome_i = $_POST['nome_i'];
-$login_i = $_POST['login_i'];
-$senha_i = md5($_POST['senha_i']);
+$id_i = NULL;
+$tipo_i = $_POST['tipo_i'];
+$observacao_i = $_POST['observacao_i'];
 $enviar_i = $_POST['enviar'];
 
-if(isset($id_i)) {
-$usuario_incluir = "INSERT INTO Usuario (Usuario_Id, Usuario_Nome, Usuario_Login, Usuario_Senha ) 
-VALUES ( '$id_i', '$nome_i', '$login_i', '$senha_i' 
+if(isset($tipo_i)) {
+$tipo_incluir = "INSERT INTO Tipo (Tipo_Id, Tipo_Descricao, Tipo_Observacao ) 
+VALUES ( '$id_i', '$tipo_i', '$observacao_i' 
 ) ";
 
-$result = mysqli_query($con,$usuario_incluir)
+$result = mysqli_query($con,$tipo_incluir)
        or die (mysqli_error());
        
        echo "
 <div class='alert alert-success alert-dismissable'>
 	<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
-  	O usuário foi inserido com sucesso! Deseja <a href='index.php?page=usuario-lista-inc' class='alert-link'>inserir outro?</a>
+  	O tipo foi inserido com sucesso! Deseja <a href='index.php?page=tipo-lista-inc' class='alert-link'>inserir outro?</a>
 </div>
 
        ";
@@ -33,7 +32,7 @@ else {
 	echo "
 <div class='alert alert-warning alert-dismissable'>
 	<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
-  	<strong>Atenção!</strong> Ocorreu um erro na inclusão do usuário.
+  	<strong>Atenção!</strong> Ocorreu um erro na inclusão do tipo.
 </div>
 ";
 }

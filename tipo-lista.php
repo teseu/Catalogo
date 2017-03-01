@@ -1,7 +1,7 @@
 <?php 
 
   include("misc.inc");
-  include("setor.php");
+  include("tipo.php");
   $con = mysqli_connect($host,$user,$passwd,$dbname)
    or die ("Couldn't connect to server em setor-lista");
 
@@ -12,20 +12,18 @@
    <div class="panel panel-default">
      <div class="panel-heading">
       <div class="col-md-10" id="panel-title">
-        Setores e Endereços 
+        Tipos de Setores 
       </div>
       <div class="col-md-2 text-right" id="panel-btn">
-        <a href="index.php?page=setor-lista-inc"><img src="img/edit_add.png"></a>
+        <a href="index.php?page=tipo-lista-inc"><img src="img/edit_add.png"></a>
       </div>
      </div>
       <table class="table">
         <thead>
            <tr>
              <th>#</th>
-             <th>Setor</th>
-             <th>Titular</th>
-             <th>Telefone</th>
-             <th>E-mail</th>
+             <th>Tipo</th>
+             <th>Observação</th>
            </tr>
          </thead>
          <tbody>
@@ -34,25 +32,22 @@
 
 
 $i = 1;
-while ($list = mysqli_fetch_array($lista_setor_curto)) {
+while ($list = mysqli_fetch_array($lista_tipo)) {
 $num_c = $i++;
-$id_c = $list[0];
-$setor_c = $list[1];
-$titular_c = $list[2];
-$telefone_c = $list[3];
-$email_c = $list[4];
+$id_c =  $list[0];
+$tipo_c = $list[1];
+$observacao_c = $list[2];
+
 
 echo "<tr>
 <td>$num_c</td>
 <td>
-<a href='index.php?page=setor-lista-completo&id_p=$id_c' rel='tooltip' data-original-title='Clique para ver detalhes' 
-class='btn' id='$id_c'>
-$setor_c
-</a> 
+	<a href='index.php?page=tipo-lista-ed&id_p=$id_c' rel='tooltip' data-original-title='Clique para editar' 
+		class='btn' id='$id_c'>
+		$tipo_c
+	</a> 
 </td>
-<td>$titular_c</td>
-<td>$telefone_c</td>
-<td>$email_c</td>
+<td>$observacao_c</td>
 </tr>";
 
 }
@@ -65,5 +60,3 @@ $setor_c
     </div>
   </div>
 </div>
-
-

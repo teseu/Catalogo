@@ -4,14 +4,16 @@
 <form method="post" action="index.php?page=ed-usuario" enctype="multipart/form-data">
 	<div class="tab-pane fade in" id="tab2">
 	  <div class="row" style="margin: 20px 0 0 30px;">
-	    <div class="col-md-2"><input class="col-md-12 form-control" type="text" name="id_i"
+	    <div class="col-md-1"><input class="col-md-12 form-control" type="text" name="id_i"
 	     value='<?php echo "$id_e"; ?>'></div>
 	    <div class="col-md-4"><input class="col-md-12 form-control" type="text" name="nome_i"
 	    value='<?php echo "$nome_e"; ?>'></div>
 	    <div class="col-md-3"><input class="col-md-12 form-control" type="text" name="login_i"
 	    value='<?php echo "$login_e"; ?>'></div>
-	    <div class="col-md-3"><input class="col-md-12 form-control" type="password" name="senha_i"
-	    value='<?php echo "$senha_e"; ?>'></div>
+	    <div class="col-md-2"><input class="col-md-12 form-control" type="password" name="pass_confirmation"
+	    placeholder="senha" data-validation="strength" data-validation-strength="1" data-validation-optional="true"></div>
+	    <div class="col-md-2"><input class="col-md-12 form-control" type="password" name="pass"
+	    placeholder="confirme a senha" data-validation="confirmation" data-validation-optional="true"></div>
 	  </div>	  
 	</div>
 	<div class="modal-footer">

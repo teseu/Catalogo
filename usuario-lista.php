@@ -10,7 +10,13 @@
 <div class="row">
  <div class="col-md-12">
    <div class="panel panel-default">
-     <div class="panel-heading">Usuarios</div>
+     <div class="panel-heading">
+      <div class="col-md-10"> Usuarios
+      </div>
+       <div class="col-md-2 text-right" id="panel-btn">
+          <a href="index.php?page=usuario-lista-inc"><img src="img/edit_add.png"></a>
+      </div>
+    </div>
       <table class="table">
         <thead>
            <tr>
@@ -18,7 +24,7 @@
              <th>Id</th>
              <th>Nome</th>
              <th>Login</th>
-             <th>Senha</th>
+             <th>Acesso</th>
            </tr>
          </thead>
          <tbody>
@@ -42,7 +48,7 @@ class='btn' id='$id_c'>
 $nome_c
 </a></td>
 <td>$login_c</td>
-<td>$senha_c</td>
+<td>Não definido</td>
 </tr>";
 
 }
