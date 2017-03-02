@@ -1,6 +1,6 @@
 <?php include("misc.inc"); ?>
 
-<form method="post" action="principal.php?page=usuario-lista-ed" enctype="multipart/form-data">
+<form method="post" action="index.php?page=usuario-lista-ed" enctype="multipart/form-data">
 	<div class="tab-pane fade in" id="tab2">
 	  <div class="row" style="margin: 20px 0 0 30px;">
 	  	<p>Pesquise</p>
