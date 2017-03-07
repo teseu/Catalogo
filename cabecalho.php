@@ -2,7 +2,7 @@
 <div class="row">
     <div class="col-md-2" id="logo">
       <a href="index.html" title="Catálogo online">
-        <img src="http://placehold.it/200x96" alt="Catálogo online" class="img-responsive media-object img-rounded">
+        <img src="img/brasao.png" alt="Catálogo online" class="img-responsive media-object img-rounded">
       </a>
     </div>
     <div class="col-md-6">
