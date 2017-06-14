@@ -21,6 +21,7 @@
               <th>Titular</th>
               <th>Telefone</th>
               <th>E-mail</th>
+              <th>Ações</th>
             </tr>
           </thead>
           <tbody>
@@ -30,7 +31,7 @@
                 {{ $area->id }}
               </td>
               <td>
-                {{ $area->Area_Nome }}
+                <a href="{{ url('/area', $area->Area_Alias) }}">{{ $area->Area_Nome }}</a>
               </td>
               <td>
                 {{ $area->Area_Titular }}
@@ -40,6 +41,10 @@
               </td>
               <td>
                 {{ $area->Area_Email }}
+              </td>
+              <td>
+                <a href="#" class="btn-setting"><i class="halflings-icon pencil"></i></a>
+                <a href="#" class="btn-setting"><i class="halflings-icon remove"></i></a>
               </td>
             </tr>
 

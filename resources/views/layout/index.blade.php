@@ -3,7 +3,7 @@
 @section('content')
 <div class="box">
   <div class="box-header">
-    <h2><i class="halflings-icon white list"></i><span class="break"></span>Principal</h2>
+    <h2><i class="halflings-icon white map-marker"></i><span class="break"></span>Principal</h2>
   </div>
   <div class="jumbotron jumbotron-fluid container-fluid">
     <h1 class="display-3">Bem vindo!</h1>
