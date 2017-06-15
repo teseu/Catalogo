@@ -2,8 +2,8 @@
 
 namespace catalogo\Http\Controllers;
 
-use Request;
 use catalogo\Area;
+use catalogo\Http\Requests\AreaRequest;
 
 class AreaController extends Controller
 {
@@ -27,11 +27,9 @@ class AreaController extends Controller
       return view('area.create');
     }
 
-    public function store ()
+    public function store (AreaRequest $requisicao)
     {
-      $entrada = Request::all();
-
-      Area::create($entrada);
+      Area::create($requisicao->all());
 
       return redirect('area');
     }
