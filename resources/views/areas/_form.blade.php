@@ -25,7 +25,7 @@
   </div>
   <div class="form-group span6">
     {!! Form::label('Area_Telefone', 'Telefone:') !!}
-    {!! Form::text('Area_Telefone', null, ['class' => 'form-control span12']) !!}
+    {!! Form::tel('Area_Telefone', null, ['class' => 'form-control span12']) !!}
   </div>
 <div class="row-fluid">
   <div class="form-group span6">
@@ -44,7 +44,7 @@
       array(
       'Estrutura' => array('1' => 'Secretaria', '2' => 'Subsecretaria'),
       'Saúde' => array('3' => 'Hospital', '4' => 'Clínica'),
-      'Educação' => array('5' => 'Escola', '6' => 'Cheche', '7' => 'Universidade'),
+      'Educação' => array('5' => 'Escola', '6' => 'Creche', '7' => 'Universidade'),
       ),
       ['class' => 'form-control span12']
     ) !!}

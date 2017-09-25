@@ -95,13 +95,13 @@
 				<div class="nav-collapse sidebar-nav">
 					<ul class="nav nav-tabs nav-stacked main-menu">
 						<li><a href="/"><i class="icon-home"></i><span class="hidden-tablet"> Home</span></a></li>
-						<!-- <li><a href="/area"><i class="icon-briefcase"></i><span class="hidden-tablet"> Áreas</span></a></li> -->
+						<!-- <li><a href="/areas"><i class="icon-briefcase"></i><span class="hidden-tablet"> Áreas</span></a></li> -->
 						<!-- <li><a href="index.html"><i class="icon-bar-chart"></i><span class="hidden-tablet"> Áreas</span></a></li> -->
 						<li>
-							<a class="dropmenu" href="/#"><i class="icon-briefcase"></i><span class="hidden-tablet"> Áreas</span></a>
+							<a class="dropmenu" href="/#"><i class="icon-building"></i><span class="hidden-tablet"> Áreas</span></a>
 							<ul>
-								<li><a class="submenu" href="/area"><i class="icon-list"></i><span class="hidden-tablet"> Todas</span></a></li>
-								<li><a class="submenu" href="/area/create"><i class="icon-plus"></i><span class="hidden-tablet"> Nova</span></a></li>
+								<li><a class="submenu" href="/areas"><i class="icon-list"></i><span class="hidden-tablet"> Todas</span></a></li>
+								<li><a class="submenu" href="/areas/create"><i class="icon-plus"></i><span class="hidden-tablet"> Nova</span></a></li>
 							</ul>
 						</li>
 					</ul>

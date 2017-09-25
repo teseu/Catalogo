@@ -2,8 +2,8 @@
 
 @section('content')
 
-  {!! Form::open(['url' => 'area']) !!}
-    @include('area._form', ['submitButton' => 'Criar área'])
+  {!! Form::open(['url' => 'areas']) !!}
+    @include('areas._form', ['submitButton' => 'Criar área'])
   {!! Form::close() !!}
 
 @include('errors.list')

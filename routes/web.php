@@ -11,17 +11,9 @@
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
 
-// Route::get('/', function () {
-//   return view('layout.layout');
-// });
+Route::resource('areas', 'AreasController');
 
 Route::get('/', 'LayoutController@index');
 Route::get('form', 'LayoutController@form');
-Route::get('area', 'AreaController@index');
-Route::get('area/create', 'AreaController@create');
-Route::get('area/{alias}', 'AreaController@show');
-Route::post('area', 'AreaController@store');
+

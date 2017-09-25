@@ -11,7 +11,7 @@
     <hr class="my-4">
     <p>Os contatos das áreas cadastradas, com telefone, e-mail, endereço e nomes de titulares.</p>
     <p class="lead">
-      <a class="btn btn-primary btn-lg" href="/area" role="button">Comece aqui</a>
+      <a class="btn btn-primary btn-lg" href="/areas" role="button">Comece aqui</a>
     </p>
   </div>
 </div>

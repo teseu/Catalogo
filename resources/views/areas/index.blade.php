@@ -31,7 +31,7 @@
                 {{ $area->id }}
               </td>
               <td>
-                <a href="{{ url('/area', $area->Area_Alias) }}">{{ $area->Area_Nome }}</a>
+                <a href="{{ url('/areas', $area->Area_Alias) }}">{{ $area->Area_Nome }}</a>
               </td>
               <td>
                 {{ $area->Area_Titular }}
