@@ -41,13 +41,10 @@
   <div class="form-group span6">
     {!! Form::label('Area_Tipo', 'Tipo da área:') !!}
     {!! Form::select('Area_Tipo',
-      array(
-      'Estrutura' => array('1' => 'Secretaria', '2' => 'Subsecretaria'),
-      'Saúde' => array('3' => 'Hospital', '4' => 'Clínica'),
-      'Educação' => array('5' => 'Escola', '6' => 'Creche', '7' => 'Universidade'),
-      ),
-      ['class' => 'form-control span12']
-    ) !!}
+      [ '1' => 'Secretaria', '2' => 'Subsecretaria', '3' => 'Hospital', '4' => 'Clínica',
+      '5' => 'Escola', '6' => 'Creche', '7' => 'Universidade'
+      ], 'Area_Tipo'
+       ) !!}
   </div>
   <div class="form-group span6">
     {!! Form::label('Area_Alias', 'Apelido da área:') !!}

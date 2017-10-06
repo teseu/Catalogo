@@ -43,8 +43,10 @@
                 {{ $area->Area_Email }}
               </td>
               <td>
-                <a href="#" class="btn-setting"><i class="halflings-icon pencil"></i></a>
-                <a href="#" class="btn-setting"><i class="halflings-icon remove"></i></a>
+                <ul class="inline">
+                  <li>{{ link_to_route('areas.edit', '', [$area->id], array('class'=>'halflings-icon pencil')) }}</li>
+                  <li><a href="#" class="btn-setting"><i class="halflings-icon remove"></i></a></li>
+                </ul>
               </td>
             </tr>
 
