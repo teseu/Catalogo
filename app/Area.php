@@ -18,4 +18,10 @@ class Area extends Model
     'Area_Secretaria',
     'Area_Tipo'
   ];
+
+  public function tipos()
+  {
+  
+    return $this->hasOne('catalogo\Tipo');
+  }        
 }
