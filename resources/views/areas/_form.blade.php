@@ -1,6 +1,6 @@
 <div class="box">
 <div class="box-header">
-  <h2><i class="halflings-icon white check"></i><span class="break"></span>Criar nova área</h2>
+  <h2><i class="halflings-icon white check"></i><span class="break"></span></h2>
   <div class="box-icon">
     <!-- <a href="#" class="btn-setting"><i class="halflings-icon white wrench"></i></a> -->
     <a href="#" class="btn-minimize"><i class="halflings-icon white chevron-up"></i></a>
