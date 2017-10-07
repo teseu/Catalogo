@@ -43,7 +43,8 @@
     {!! Form::select('Area_Tipo',
       [ '1' => 'Secretaria', '2' => 'Subsecretaria', '3' => 'Hospital', '4' => 'Clínica',
       '5' => 'Escola', '6' => 'Creche', '7' => 'Universidade'
-      ], 'Area_Tipo'
+      ], $tipo,
+      ['class' => 'form-control span12']
        ) !!}
   </div>
   <div class="form-group span6">
