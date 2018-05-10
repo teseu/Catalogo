@@ -3,6 +3,7 @@
 namespace catalogo\Http\Controllers;
 
 use catalogo\Area;
+use catalogo\Tipo;
 use catalogo\Http\Requests\AreaRequest;
 
 class AreasController extends Controller
